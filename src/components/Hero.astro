@@ -1,0 +1,65 @@
+---
+import BackgroundStar from "./BackgroundStar.astro";
+import RRSS from "./RRSS.astro";
+import ArrowDown from "../icons/ArrowDown.astro";
+---
+
+<main
+  class="relative w-full max-w-screen-xl h-full flex flex-col justify-center pb-40 text-white"
+>
+  <BackgroundStar />
+
+  <article
+    id="home"
+    class="mt-10 abolsute z-10 flex justify-center items-center"
+  >
+    <article>
+      <img
+        class="rounded-full w-3/4"
+        src="/public/images/mi-imagen.jpeg"
+        alt=""
+      />
+    </article>
+    <article class="flex gap-3 flex-col">
+      <span class="text-3xl font-bold">¡Hola! Mi nombre es</span>
+      <h1
+        class="text-transparent bg-clip-text bg-gradient-to-r from-scooter-400 to-scooter-500 uppercase text-6xl font-bold"
+      >
+        Luciano Repetti
+      </h1>
+      <h3 class="uppercase text-3xl font-bold">desarrollador web frontend</h3>
+      <RRSS />
+    </article>
+  </article>
+
+  <div
+    class="absolute bottom-16 right-1/2 translate-x-1/2 flex flex-col items-center animate-bounce cursor-pointer"
+  >
+    <ArrowDown width="50" heigth="50" />
+    <div class="absolute top-6">
+      <ArrowDown width="46" heigth="46" />
+    </div>
+  </div>
+</main>
+
+<style>
+  @keyframes twinkle {
+    0%,
+    100% {
+      transform: translateY(100%) translateX(0);
+    }
+    25% {
+      transform: translateY(75%) translateX(10%);
+    }
+    50% {
+      transform: translateY(50%) translateX(20%);
+    }
+    75% {
+      transform: translateY(25%) translateX(30%);
+    }
+  }
+
+  .twinkle {
+    animation: twinkle 7s ease-in-out infinite;
+  }
+</style>
