@@ -1,0 +1,64 @@
+---
+import CardProyect from "./CardProyect.astro";
+---
+
+<section class="w-full max-w-screen-2xl min-h-[95vh] pt-8">
+  <h2
+    class="text-transparent bg-clip-text bg-gradient-to-r from-scooter-400 to-scooter-500 uppercase text-5xl font-bold mb-16"
+  >
+    Mis proyectos
+  </h2>
+
+  <section class="flex gap-8 flex-wrap">
+    <CardProyect
+      title="Uniandes"
+      description="Una plataforma de creacion de cvs con diseños preestablecidos para alumnos de la universidad de los andes."
+      image="/public/images/inicio-uniandes.png"
+      link="https://create-cv-uniandes.vercel.app/login"
+      technologies={["HTML5", "CSS3", "JavaScript", "React"]}
+    />
+    <CardProyect
+      title="Tienda Carpi"
+      description="Un eccomerce de productos muebleros y diferentes tipos de superficies de alta calidad. Para usuarios finales y empresas de reventa."
+      image="/public/images/inicio-carpi.png"
+      link="https://tienda.carpiargentina.com"
+      technologies={["HTML5", "SASS", "TypeScript", "NextJS", "React"]}
+    />
+    <CardProyect
+      title="Dashboard Carpi"
+      description="Un dashboard para la administración de los usuarios, empresas de reventa, productos, lineas, configuraciones y administración de permisos para usuarios del ecommerce."
+      image="/public/images/dashboard-carpi.png"
+      technologies={["HTML5", "CSS3", "JavaScript", "React", "Berry", "MUI"]}
+    />
+    <CardProyect
+      title="Download media"
+      description="Un sitio que cree para la descarga de mp3 y mp4 ya sea de baja o alta calidad."
+      image="/public/images/inicio-media.png"
+      link="https://down-media.vercel.app"
+      technologies={[
+        "HTML5",
+        "CSS3",
+        "TypeScript",
+        "React",
+        "NextJS",
+        "NextUI",
+        "NextAPI",
+        "TailwindCSS",
+      ]}
+    />
+    <CardProyect
+      title="Shortly"
+      description="Una landing page donde se pueden acortar links y guardar en el almacenamiento del dispositivo."
+      image="/public/images/inicio-shortly.png"
+      link="https://url-shortening-sigma.vercel.app"
+      technologies={[
+        "HTML5",
+        "CSS3",
+        "TypeScript",
+        "React",
+        "Vite",
+        "TailwindCSS",
+      ]}
+    />
+  </section>
+</section>
