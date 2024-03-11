@@ -1,0 +1,16 @@
+---
+const { top, right, bottom, left, background } = Astro.props;
+
+interface Props {
+  top?: string;
+  right?: string;
+  bottom?: string;
+  left?: string;
+  background?: string;
+}
+---
+
+<div
+  class={`absolute ${top} ${right} ${bottom} ${left} ${background} rounded-full blur-3xl w-44 h-44`}
+>
+</div>
