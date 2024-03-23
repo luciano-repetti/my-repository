@@ -11,7 +11,7 @@ const { image, title, description, link, technologies } = Astro.props;
 ---
 
 <div
-  class="flex flex-1 min-w-[400px] max-w-[50%] flex-col rounded-xl bg-slate-700 bg-clip-border text-white shadow-md"
+  class="flex flex-1 min-w-[400px] max-w-[50%] flex-col rounded-xl bg-gray-800 bg-clip-border text-white shadow-md"
 >
   <div class="w-full shadow-xl">
     <img class="w-full h-60 object-cover rounded-t-xl" src={image} alt="" />
@@ -32,7 +32,7 @@ const { image, title, description, link, technologies } = Astro.props;
         <div class="pt-2 flex gap-2 flex-wrap">
           {technologies.length > 0 &&
             technologies.map((technologie) => (
-              <div class="rounded-3xl text-sm font-medium bg-slate-800 px-3 py-1">
+              <div class="rounded-3xl text-sm font-medium bg-slate-700 px-3 py-1">
                 #{technologie}
               </div>
             ))}
