@@ -3,26 +3,26 @@ import CardProyect from "./CardProyect.astro";
 ---
 
 <section
-  class="w-full max-w-screen-2xl min-h-[95vh] pt-16 scrollspy"
+  class="w-full px-4 lg:px-0 max-w-screen-2xl min-h-[95vh] pt-16 scrollspy"
   id="projects"
 >
   <h2
-    class="text-transparent bg-clip-text bg-gradient-to-r from-scooter-400 to-scooter-500 uppercase text-5xl font-bold mb-16"
+    class="text-transparent bg-clip-text bg-gradient-to-r from-scooter-400 to-scooter-500 uppercase text-3xl lg:text-5xl font-bold mb-16"
   >
     Mis proyectos
   </h2>
 
-  <section class="flex gap-8 justify-center flex-wrap">
+  <section class="w-full flex gap-8 justify-center flex-wrap">
     <CardProyect
       title="Uniandes"
-      description="Una plataforma de creacion de curriculms con diseños preestablecidos para alumnos de la universidad de los andes."
+      description="Una plataforma de creacion de curriculum con diseños preestablecidos para alumnos de la universidad de los andes."
       image="/public/images/inicio-uniandes.png"
       link="https://create-cv-uniandes.vercel.app/login"
       technologies={["HTML5", "CSS3", "JavaScript", "React"]}
     />
     <CardProyect
       title="Tienda Carpi"
-      description="Un eccomerce de productos muebleros y diferentes tipos de superficies de alta calidad. Para usuarios finales y empresas de reventa."
+      description="Un eccomerce de productos de revestimiento y de diferentes tipos de superficies de alta calidad. Para usuarios finales y empresas de reventa."
       image="/public/images/inicio-carpi.png"
       link="https://tienda.carpiargentina.com"
       technologies={["HTML5", "SASS", "TypeScript", "NextJS", "React"]}
@@ -51,7 +51,7 @@ import CardProyect from "./CardProyect.astro";
     />
     <CardProyect
       title="Shortly"
-      description="Una landing page donde se pueden acortar links y guardar en el almacenamiento del dispositivo."
+      description="Una landing page donde se pueden acortar links y se guarda en el almacenamiento del navegador."
       image="/public/images/inicio-shortly.png"
       link="https://url-shortening-sigma.vercel.app"
       technologies={[
@@ -65,7 +65,7 @@ import CardProyect from "./CardProyect.astro";
     />
     <CardProyect
       title="Ad Events"
-      description="Un sitio web que cree para la capacitación de mentor para MindHub + Argentina programa 4.0 que hice."
+      description="Un sitio web que cree para la capacitación de mentor para MindHub + Argentina programa 4.0 donde participe."
       image="/public/images/inicio-adeventsMentor.png"
       link="https://luciano-repetti.github.io/Amazing-Events-mentor/index.html"
       technologies={["HTML5", "CSS3", "JavaScript"]}

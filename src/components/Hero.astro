@@ -5,15 +5,15 @@ import ArrowDown from "../icons/ArrowDown.astro";
 ---
 
 <main
-  class="relative w-full max-w-screen-xl h-[95vh] flex flex-col justify-center pb-40 text-white scrollspy"
+  class="relative w-full max-w-screen-xl h-[95svh] lg:h-[95vh] flex flex-col pt-16 lg:pt-0 lg:justify-center lg:pb-40 text-white scrollspy"
   id=""
 >
-  <BackgroundStar />
+  <!-- <BackgroundStar /> -->
 
   <article
-    class="mt-10 abolsute z-10 flex justify-center items-center scrollspy"
+    class="px-4 lg:px-0 lg:mt-10 abolsute z-10 flex flex-col lg:flex-row gap-8 justify-center items-center scrollspy"
   >
-    <article>
+    <article class="flex justify-center">
       <img
         class="rounded-full w-3/4"
         src="/public/images/mi-imagen.jpeg"
@@ -21,20 +21,22 @@ import ArrowDown from "../icons/ArrowDown.astro";
       />
     </article>
     <article class="flex gap-3 flex-col">
-      <span class="text-3xl font-bold">¡Hola! Mi nombre es</span>
+      <span class="text-2xl lg:text-3xl font-bold">¡Hola! Mi nombre es</span>
       <h1
-        class="text-transparent bg-clip-text bg-gradient-to-r from-scooter-400 to-scooter-500 uppercase text-6xl font-bold"
+        class="text-transparent bg-clip-text bg-gradient-to-r from-scooter-400 to-scooter-500 uppercase text-4xl lg:text-6xl font-bold"
       >
         Luciano Repetti
       </h1>
-      <h3 class="uppercase text-3xl font-bold">desarrollador web frontend</h3>
+      <h3 class="uppercase text-xl lg:text-3xl font-bold">
+        desarrollador web frontend
+      </h3>
       <RRSS />
     </article>
   </article>
 
   <div class="w-full flex flex-col items-center">
     <div
-      class="absolute bottom-16 flex flex-col items-center animate-bounce cursor-pointer"
+      class="absolute bottom-24 lg:bottom-16 flex flex-col items-center animate-bounce cursor-pointer"
       id="scrollToAbout"
     >
       <ArrowDown width="50" heigth="50" />
