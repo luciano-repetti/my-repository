@@ -32,12 +32,15 @@ import ArrowDown from "../icons/ArrowDown.astro";
     </article>
   </article>
 
-  <div
-    class="absolute w-full bottom-16 flex flex-col items-center animate-bounce cursor-pointer"
-  >
-    <ArrowDown width="50" heigth="50" />
-    <div class="absolute top-6">
-      <ArrowDown width="46" heigth="46" />
+  <div class="w-full flex flex-col items-center">
+    <div
+      class="absolute bottom-16 flex flex-col items-center animate-bounce cursor-pointer"
+      id="scrollToAbout"
+    >
+      <ArrowDown width="50" heigth="50" />
+      <div class="absolute top-6">
+        <ArrowDown width="46" heigth="46" />
+      </div>
     </div>
   </div>
 </main>
@@ -63,3 +66,12 @@ import ArrowDown from "../icons/ArrowDown.astro";
     animation: twinkle 7s ease-in-out infinite;
   }
 </style>
+
+<script>
+  const scrollToAbout = document.getElementById("scrollToAbout");
+
+  scrollToAbout?.addEventListener("click", () => {
+    window.location.hash = ""; // para que pueda volver a bajar a "#about"
+    window.location.hash = "about";
+  });
+</script>
