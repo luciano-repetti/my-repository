@@ -3,6 +3,7 @@
     href="https://github.com/luciano-repetti"
     target="_blank"
     aria-label="Ir al perfil de GitHub"
+    title="Ir al perfil de GitHub"
     class="p-2 w-fit h-fit lg:p-3 rounded-full border-2 border-scooter-400 cursor-pointer transition-all duration-300 hover:bg-scooter-400"
     ><svg
       width="32"
@@ -18,7 +19,8 @@
   <a
     href="https://www.linkedin.com/in/luciano-repetti-1182b1210"
     target="_blank"
-    aria-label="Ir al perfil de linkendin"
+    aria-label="Ir al perfil de Linkendin"
+    title="Ir al perfil de Linkendin"
     class="p-2 w-fit h-fit lg:p-3 rounded-full border-2 border-scooter-400 cursor-pointer transition-all duration-300 hover:bg-scooter-400"
     ><svg
       xmlns="http://www.w3.org/2000/svg"
@@ -32,8 +34,10 @@
     >
   </a>
   <a
-    id="dowloadcv"
+    href="cv/cv_luciano_repetti.pdf"
+    download
     aria-label="Descargar cv"
+    title="Descargar cv de Luciano Repetti"
     class="text-sm text-center lg:text-base uppercase font-semibold ml-3 p-2 lg:p-3 lg:px-4 pr-5 rounded-full border-2 border-scooter-400 cursor-pointer flex items-center lg:gap-1 transition-all duration-300 hover:bg-scooter-400"
     ><svg
       width="32"
@@ -56,20 +60,20 @@
 </article>
 
 <script>
-  let buttonDownload = document.getElementById("dowloadcv");
-  const downloadCv = () => {
-    let rutaArchivo = "/public/cv/cv_luciano_repetti.pdf";
-    let link = document.createElement("a");
-    link.href = rutaArchivo;
+  // let buttonDownload = document.getElementById("dowloadcv");
+  // const downloadCv = () => {
+  //   let rutaArchivo = "/public/cv/cv_luciano_repetti.pdf";
+  //   let link = document.createElement("a");
+  //   link.href = rutaArchivo;
 
-    link.download = "cv_luciano_repetti.pdf";
+  //   link.download = "cv_luciano_repetti.pdf";
 
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
-  buttonDownload?.addEventListener("click", () => {
-    downloadCv();
-  });
+  // buttonDownload?.addEventListener("click", () => {
+  //   downloadCv();
+  // });
 </script>

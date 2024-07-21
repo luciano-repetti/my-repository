@@ -5,9 +5,30 @@ import Hero from "../components/Hero.astro";
 import Aboutme from "../components/Aboutme.astro";
 import MyProyects from "../components/MyProyects.astro";
 import Contact from "../components/Contact.astro";
+
+const seoProps = {
+  title: "Portafolio - Luciano Repetti",
+  description:
+    "Portafolio de Luciano Repetti, desarrollador web frontend especializado en la creación de aplicaciones web modernas y eficientes.",
+  keywords: [
+    "Portafolio",
+    "Luciano Repetti",
+    "Desarrollador Web",
+    "Frontend",
+    "Aplicaciones Web",
+  ],
+  url: "https://www.tu-dominio.com",
+  imageUrl: "https://www.tu-dominio.com/imagen-de-portada.jpg",
+};
 ---
 
-<Layout title="Portafolio - Luciano Repetti">
+<Layout
+  title={seoProps.title}
+  description={seoProps.description}
+  keywords={seoProps.keywords}
+  url={seoProps.url}
+  imageUrl={seoProps.imageUrl}
+>
   <Header />
   <Hero />
   <Aboutme />
