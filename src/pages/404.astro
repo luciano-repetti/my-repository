@@ -1,9 +1,30 @@
 ---
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
+
+const seoProps = {
+  title: "Portafolio - Luciano Repetti",
+  description:
+    "Página no encontrada en el portafolio de Luciano Repetti. Vuelve al sitio para explorar más sobre mis proyectos y habilidades en desarrollo web frontend.",
+  keywords: [
+    "Portafolio",
+    "Luciano Repetti",
+    "Desarrollador Web",
+    "Frontend",
+    "404",
+  ],
+  url: "https://www.tu-dominio.com/404",
+  imageUrl: "https://www.tu-dominio.com/imagen-de-portada.jpg",
+};
 ---
 
-<Layout title="Portafolio - Luciano Repetti">
+<Layout
+  title={seoProps.title}
+  description={seoProps.description}
+  keywords={seoProps.keywords}
+  url={seoProps.url}
+  imageUrl={seoProps.imageUrl}
+>
   <Header />
   <section
     class="w-[100%] h-[90svh] lg:h-[90vh] flex justify-center items-center flex-col gap-8"
